@@ -1,5 +1,11 @@
 # Knowledge Pipe プロジェクト
 
+<!-- プロセスフロー図（ローカルHTML）埋め込み -->
+
+<object data="./process-flow.html" type="text/html" width="100%" height="500px"></object>
+
+## 処理フロー
+
 ## フォルダ構成と概要
 
 ```
@@ -31,7 +37,9 @@
 - `script.py`：要約結果を Google ドキュメントへ反映
 - `GEMINI.md`/`PROMPT.md`：Gemini API や要約ルールの説明
 
-# フォルダ変更監視スクリプト
+# sh section
+
+## フォルダ変更監視スクリプト
 
 指定されたフォルダ配下でファイルが追加されたり、既存のファイルが編集されたりした際に、その変更を検知してコンソールに表示するシェルスクリプトです。
 
@@ -50,10 +58,6 @@ command -v fswatch
 ```sh
 brew install fswatch
 ```
-
-##################################
-#########　 sh section 　##########
-##################################
 
 ## 使い方
 
@@ -92,9 +96,7 @@ File changed: ./original/new_file.txt
 
 監視を停止するには、`Ctrl+C`を押してください。
 
-##################################
-#######　 python section 　#######
-##################################
+# python section
 
 ## Python スクリプトの実行環境
 
@@ -157,9 +159,7 @@ python script.py
 uv run python script.py
 ```
 
-##################################
-######## docs api section ########
-##################################
+# docs api section
 
 ## Google Docs API セットアップガイド
 
