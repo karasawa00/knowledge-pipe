@@ -27,15 +27,6 @@
 ├── watch_changes.sh        # 監視ディレクトリ配下のファイル変更検知＆要約生成
 ```
 
-- `original/`：各メモファイルの格納場所
-- `secret/`：Google API 認証情報（`credentials.json`、`token.json`）を保存
-- `summarized/`：最新の要約結果（全ファイル分を集約）を保存
-- `.venv/`：Python 仮想環境（uv で作成）
-- `watch_changes.sh`：`original`ディレクトリ配下のファイル変更を監視し、要約を生成
-- `run_script.sh`：`summarized/summarized.txt`の変更を監視し、内容を Python スクリプトに渡す
-- `script.py`：要約結果を Google ドキュメントへ反映
-- `GEMINI.md`/`PROMPT.md`：Gemini API や要約ルールの説明
-
 # sh section
 
 ## フォルダ変更監視スクリプト
