@@ -1,10 +1,7 @@
 # Knowledge Pipe プロジェクト
 
-<!-- プロセスフロー図（ローカルHTML）埋め込み -->
-
-<object data="./process-flow.html" type="text/html" width="100%" height="500px"></object>
-
 ## 処理フロー
+<img width="70%" height="70%" alt="Image" src="https://github.com/user-attachments/assets/4d2373fd-14da-44de-9fb6-69a5c75bb200" />
 
 ## フォルダ構成と概要
 
