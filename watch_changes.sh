@@ -50,5 +50,7 @@ fswatch -r --event Created --event Updated "$TARGET_DIR" | xargs -n1 -I{} sh -c 
   echo "Generating summary to: $output_filepath"
 
   # geminiコマンドを実行し、結果をファイルに出力
-  gemini --prompt "$target_dir 配下にある全てのtxtファイルの内容を要約して。説明や前置きは不要です。要約のみを出力してください。" -m gemini-2.5-flash > "$output_filepath"
+  # デフォルト時のコマンド（gemini cliを使いすぎるとLLMの使用限度にかかってエラーになるので、その場合は54行をコメントアウト＆55行をアンコメントする）
+  gemini --prompt "$target_dir 配下にある全てのtxtファイルの内容を要約して。説明や前置きは不要です。要約のみを出力してください。" > "$output_filepath"
+  # gemini --prompt "$target_dir 配下にある全てのtxtファイルの内容を要約して。説明や前置きは不要です。要約のみを出力してください。" -m gemini-2.5-flash > "$output_filepath"
 ' _ "$TARGET_DIR" {}

@@ -1,6 +1,7 @@
 # Knowledge Pipe プロジェクト
 
 ## 処理フロー
+
 <img width="70%" height="70%" alt="Image" src="https://github.com/user-attachments/assets/4d2373fd-14da-44de-9fb6-69a5c75bb200" />
 
 ## フォルダ構成と概要
@@ -16,7 +17,8 @@
 │   └── token.json          # Google API認証トークン
 ├── summarized/             # 各メモファイルの要約結果(summarized.txt)の格納場所
 │   └── summarized.txt
-├── GEMINI.md               # Gemini API関連の説明・ルール
+├── GEMINI.md               # Gemini CLIへのプロンプトルール
+├── process-flow.html       # 処理フロー図（README.md > 処理フロー のキャプチャの元データ）
 ├── README.md               # プロジェクト説明・セットアップ手順
 ├── requirements.txt        # Python依存パッケージ一覧
 ├── run_script.sh           # 要約結果ファイルの変更監視＆Pythonスクリプト実行
