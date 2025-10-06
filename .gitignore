@@ -1,3 +1,7 @@
-secret/
-original/
-summarized/
+secret/*
+!secret/.gitkeep
+original/*
+!original/.gitkeep
+summarized/*
+!summarized/.gitkeep
+
